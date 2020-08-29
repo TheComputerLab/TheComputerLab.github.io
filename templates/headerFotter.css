@@ -29,9 +29,10 @@
 
 /*header*/
 .headerClass {
-    background-color: #33d30c; /*highlight color 1 */
+    background-color: #000000; /*highlight color 1 */
     text-align: center;
     padding: 20px;
+    color: white;
 }
 
 body {
