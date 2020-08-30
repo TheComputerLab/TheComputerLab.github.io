@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/mainpage.css">
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>The Computer Lab - PrettyPrint</title>
+
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?skin=sunburst"></script>
+
+  <script> 
+    $(function(){
+      $("#header").load("templates/header.html"); 
+      $("#footer").load("templates/footer.html"); 
+    });
+    </script> 
+
+</head>
+
+<body>
+
+    <div id = "header"></div> <!--this will load code for the header @templates\footer.html -->
+
+    <div class="content">
+      <h4>While making this website there were a few things that I wanted to make sure I added to it. This artical is about the first which is called prettyprint. Prettyprint is made by google. It is a colection of js, css, html, and a bit of perl. With this library we can add pieces of code to our website for readers to see. The library will than add syntax highlighjting to the code to make it more readable. Here is an example of a few lines of JavaScript.</h4>
+      <pre class="prettyprint">
+        var a = 5;
+        var b = 10;
+        function add(a, b) {
+          return a + b;
+        }
+        console.log(add(a, b));
+      </pre>
+      <h4>Useing this library we can include pieces of code in articles and tutorials which wil make the code easier to understand for readers. Adding prettyprint to a website is very easy. Simply include this line in your webside. </h4>
+      <pre class="prettyprint">
+        &lt;script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?skin=sunburst"&gt;&lt;/script&gt;
+      </pre>
+      <h4>Now, if you ever want a piece of code in your website include a &lt;pre&gt; tag with the class "prettyprint". Everything in the pre tags will be syntax highlighted. To learn more about this visit the github page <a href="https://github.com/googlearchive/code-prettify">here</a>. Also, you can change the skin based on how you want your website to look. We're useing this skin because it fits our website. </h4>
+    </div>
+               
+    <div id = "footer"></div>
+
+</body>
+
+</html>
