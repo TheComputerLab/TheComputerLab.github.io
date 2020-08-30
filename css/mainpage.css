@@ -202,13 +202,3 @@ ol.linenums {
   margin-bottom: 0;
   color: #666666;
 }
-
-/* IE indents via margin-left */
-ul.linenums li {
-/* use for special formatting using linenums */
-}
-
-/* Alternate shading for lines */
-ul.linenums li:nth-child(odd) {
-/* use for different formatting for every other linenum */
-}
